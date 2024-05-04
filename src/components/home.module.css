@@ -1,0 +1,53 @@
+/* src/components/home.module.css */
+.container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divides the container into two equal columns */
+    align-items: start; /* Aligns items to the start of each grid cell */
+    height: 100vh; /* Optional: Makes the container full height of the viewport */
+    grid-gap: 80px; /* Space between columns */
+}
+  
+.leftColumn {
+    background-color: rgba(245, 245, 245, 0.5);
+    text-align: center;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: gray;
+    margin: 10px;
+    padding: 40px;
+    grid-column: 1 / 2; /* Assigns content to the first column */
+}
+  
+.rightColumn {
+    background-color: rgba(245, 245, 245, 0.5);
+    text-align: center;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: gray;
+    margin: 10px;
+    padding: 40px;
+    grid-column: 2 / 3; /* Assigns content to the second column */
+}
+  
+.headline {
+    font-size: 95px;
+}
+
+.intro_name {
+    font-size: 35px;
+}
+
+.statement {
+    font-size: 35px;
+}
+
+.personal_image {
+    border-radius: 30px;
+    height: 500px;
+    width: 300px;
+}
+
+.personal_image:hover {
+    
+}
