@@ -1,0 +1,225 @@
+/*This is to get a custom font*/
+.acme-regular {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Apply custom font to all text on the page*/
+* {
+  font-family: "Acme", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Create simple header*/
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-family: "Acme", sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;  /* Ensures the left and right navs are pushed to the edges */
+  align-items: center;
+}
+
+nav {
+  width: 100%; /* Ensures nav takes full width of header */
+  display: flex;
+  justify-content: space-between; /* This will push nav-left and nav-right apart */
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-right {
+  gap: 20px; /* Adds space between the right-side buttons */
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+/*Adjust body as needed*/
+body {
+  margin: 100px;
+  padding: 0;
+  background-image: url("public/sunset.png");
+  background-size: cover; /*Ensures the image covers the entire element*/
+  background-position: center; /*Centers the image*/
+  background-repeat: no-repeat; /*Prevents repeating the image*/
+  background-attachment: fixed; /*Keeps the image fixed during scrolling*/
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+}
+
+/*Display current player and game winner*/
+.status {
+  font-size: 200%;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*This is for the 3x3 grid*/
+.square {
+  background-color: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 80px;
+  line-height: 34px;
+  height: 150px;
+  width: 150px;
+  margin-right: 5px;
+  margin-top: 5px;
+  text-align: center;
+  align-content: center;
+  border-radius: 15px;
+
+  transition: font-size 0.5s ease;
+  transition: height 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+/*This makes sure that the board stays as a 3x3*/
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/*This is for the entire game area*/
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+
+/*This is for the game board area*/
+.game-board {
+  display: contents; /*This is what centers the entire grid*/ 
+}
+
+/*This is for the game steps buttons*/
+.game-info {
+  margin: 10px;
+  list-style: none; /*Turn off the list numbers*/
+  display: flex; /*Flex puts it in row, Contents puts it in column*/ 
+  flex-direction: column; /*Keep the row centered*/
+  align-items: center; /*Keep the row centered*/
+}
+
+/*This is to adjust the button display*/
+.game-info li {
+  width: 100%; /*Even width buttons*/
+  display: flex; /*Enables flex layout for each list item*/
+  justify-content: center; /*Centers the buttons within the list items*/
+  border-radius: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between; /* Ensures the text and icons are on opposite sides */
+  align-items: center; /* Vertically centers the content within the footer */
+  width: 100%;
+  padding: 10px 20px; /* Provides padding inside the footer */
+  background-color: #333; /* Dark background for the footer */
+  color: white; /* Text color */
+  box-sizing: border-box; /* Includes padding in the width and height calculations */
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Set the height of your footer */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 35px; /* Aligns text vertically centered */
+}
+
+.socials a {
+  color: white;
+  margin-left: 10px; /* Space between icons */
+  text-decoration: none; /* Removes underline from the icons */
+}
+
+.socials i {
+  font-size: 20px; /* Size of the icons */
+}
+
+/* Adjustments for different viewport sizes based on width and height */
+/* @media screen and (max-width: 670px) {
+  .square {
+    background-color: red;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+} */
+
+@media screen and (max-width: 671px) {
+  .square {
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+  }
+  button {
+    border-radius: 10px; /*Adjust edges*/
+    font-size: 75%;
+    align-items: center;
+    margin: 2px;/*Space between the buttons*/
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .square {
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+  }
+  button {
+    border-radius: 10px; /*Adjust edges*/
+    font-size: 50%;
+    align-items: center;
+    margin: 2px;/*Space between the buttons*/
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .square {
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+  }
+  button {
+    border-radius: 10px; /*Adjust edges*/
+    font-size: 50%;
+    align-items: center;
+    margin: 2px;/*Space between the buttons*/
+  }
+}
