@@ -25,6 +25,7 @@ function HomePage() {
         <h3 className={style.statement}>"Together as one."</h3>
       </div>
       <div className={style.rightColumn}>
+        <div className={style.hiddenText1}>OwO</div>
         <img 
           src="public/casual_picture_2.jpg" 
           alt="Nicholas Chung" 
@@ -32,6 +33,7 @@ function HomePage() {
           onMouseEnter={handleMouseEnter} 
           onMouseLeave={handleMouseLeave}
         />
+        <div className={style.hiddenText2}>Follow my GitHub & LinkedIn💖</div>
         <audio ref={audioRef} src="public/Among Us Sound Effect.mp3" preload="auto">
           Your browser does not support the audio element.
         </audio>
