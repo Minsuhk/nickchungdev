@@ -106,11 +106,39 @@ footer {
   font-size: 150%; 
 }
 
+/* Hide dropdown menu by default and show when .show is added */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #333;
+  right: 0; /* Adjust position as needed */
+  top: 50px; /* Adjust position as needed */
+  width: 200px; /* Set width of the dropdown */
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.nav-right .menu-button {
+  display: none; /* Initially hide menu button */
+}
+
+/* Show the dropdown menu toggle button and hide individual buttons at 563px width */
 @media screen and (max-width: 563px) {
   footer {
     font-size: 125%;
   }
   .socials i {
     font-size: 125%;
+  }
+  .nav-right .menu-button {
+    display: block; /* Show menu button */
+  }
+
+  .nav-right button:not(.menu-button),
+  .nav-right a {
+    display: none; /* Hide all other buttons and links */
   }
 }
