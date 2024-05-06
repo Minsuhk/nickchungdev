@@ -5,7 +5,7 @@ function ProjectsPage() {
   return (
     <div>
       <h1>Projects</h1>
-      <p>This is the about page where we discuss our mission and vision.</p>
+      <p>PROJECTS</p>
     </div>
   );
 }

@@ -5,7 +5,7 @@ function AboutPage() {
   return (
     <div>
       <h1>About Us</h1>
-      <p>This is the about page where we discuss our mission and vision.</p>
+      <p>ABOUT</p>
     </div>
   );
 }

@@ -57,6 +57,56 @@ button:hover {
   background-color: #555;
 }
 
+.hidden-dropdown {
+  display: none;
+}
+
+/* Dropdown Customization */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 100%;
+  align-items: center;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d2d2d2;  /* Light grey background */
+  min-width: 160px;
+  width: 100%;  /* Full width to match the parent element */
+  box-shadow: 0 0 25px 0 black;  /* Strong shadow for better visibility */
+  z-index: 1;
+  padding: 12px 0;  /* Uniform padding for aesthetic consistency */
+  left: 50%;  /* Center horizontally relative to the parent */
+  transform: translateX(-50%);  /* Correct horizontal positioning */
+  top: 20%;  /* Ensure dropdown appears right below the button/trigger */
+}
+
+/* Style the buttons inside the dropdown */
+.dropdown-content button {
+  color: black;
+  padding: 12px 20px;  /* Uniform padding around text */
+  text-decoration: none;  /* Remove underline */
+  display: block;  /* Display block to fill the width */
+  width: 100%;  /* Full width */
+  text-align: center;  /* Center the text */
+  background-color: transparent;  /* Clear background, change on hover */
+  border: none;  /* No border */
+  cursor: pointer;  /* Pointer cursor on hover */
+}
+
+/* Change the background color of dropdown items on hover */
+.dropdown-content button:hover {
+  background-color: #eae7bf;  /* Light yellow background on hover */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;  /* Display the dropdown when parent is hovered */
+}
+
 /*Adjust body as needed*/
 body {
   margin: 0;
@@ -106,39 +156,21 @@ footer {
   font-size: 150%; 
 }
 
-/* Hide dropdown menu by default and show when .show is added */
-.dropdown-menu {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  background-color: #333;
-  right: 0; /* Adjust position as needed */
-  top: 50px; /* Adjust position as needed */
-  width: 200px; /* Set width of the dropdown */
-}
-
-.dropdown-menu.show {
-  display: flex;
-}
-
-.nav-right .menu-button {
-  display: none; /* Initially hide menu button */
-}
-
 /* Show the dropdown menu toggle button and hide individual buttons at 563px width */
+@media screen and (max-width: 660px) {
+  .nav-right {
+    display: none;
+  }
+  .hidden-dropdown {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 563px) {
   footer {
     font-size: 125%;
   }
   .socials i {
     font-size: 125%;
-  }
-  .nav-right .menu-button {
-    display: block; /* Show menu button */
-  }
-
-  .nav-right button:not(.menu-button),
-  .nav-right a {
-    display: none; /* Hide all other buttons and links */
   }
 }

@@ -13,7 +13,7 @@ const pages = [
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
-
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for managing dropdown visibility
   const renderContent = () => {
     switch (currentPage) {
       case 'about': return <About/>;
@@ -37,8 +37,28 @@ function App() {
               </button>
             ))}
             <a href="public/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
-              <button><i className="fa fa-file-pdf-o"></i> Resume</button>
+              <button><i className="fa fa-file-pdf-o"></i>Resume</button>
             </a>
+          </div>
+          <div className="hidden-dropdown">
+            <div className="dropdown">  
+              <button onClick={() => setIsDropdownOpen(!isDropdownOpen)}><i class="fa fa-bars" aria-hidden="true"></i>More</button>
+              {isDropdownOpen && (
+                <ul className="dropdown-content">
+                  {pages.map(page => (
+                    <button key={page.name} onClick={() => {
+                      setCurrentPage(page.name);
+                      setIsDropdownOpen(false); // Optionally close the dropdown when a page is selected
+                    }}>
+                      <i className={page.icon}></i> {page.title}
+                    </button>
+                  ))}
+                  <a href="public/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
+                    <button><i className="fa fa-file-pdf-o"></i> Resume</button>
+                  </a>
+                </ul>
+              )}
+            </div>
           </div>
         </nav>
       </header>
