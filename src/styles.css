@@ -164,13 +164,10 @@ footer {
   .hidden-dropdown {
     display: flex;
   }
-}
-
-@media screen and (max-width: 563px) {
   footer {
-    font-size: 125%;
+    font-size: 120%;
   }
   .socials i {
-    font-size: 125%;
+    font-size: 120%;
   }
 }

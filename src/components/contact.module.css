@@ -1,0 +1,50 @@
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Acme", sans-serif;
+    box-sizing: border-box;
+}
+
+.call_to_action {
+    font-size: 500%;
+    text-align: center;
+    margin-top: 110px;
+    padding: 2%;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-style: outset;
+    border-radius: 10px;
+}
+
+.call_out_text {
+    font-size: 200%;
+    text-align: center;
+    margin: auto;
+    margin-top: -20px;
+    padding: 3%;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-style: outset;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.socials {
+    font-size: 1000%;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-style: outset;
+    border-radius: 10px;
+    width: 50%;
+    color: black;
+    text-decoration: none; /* Removes underline from the icons */
+    margin-bottom: 100px;
+}
+
+.socials a {
+    color: black;
+    margin: 40px; /* Space between icons */
+}
