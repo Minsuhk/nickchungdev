@@ -1,0 +1,66 @@
+.grid_container {
+    display: grid;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    grid-template-columns: repeat(3, 1fr); /* Defines three columns */
+    grid-template-rows: repeat(2, 1fr); /* Defines two rows */
+    gap: 10px; /* Space between grid items */
+    padding: 10px;
+}
+
+.grid_item1 {
+    height: 500px;
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.grid_item2 {
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.grid_item3 {
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.grid_item4 {
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.grid_item5 {
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.grid_item6 {
+    background-color: #f0f0f0; /* Light grey background for visibility */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 20px; /* Padding inside each item */
+    text-align: center; /* Center the text inside each item */
+    font-size: 16px; /* Font size */
+}
+
+.project_title {
+    font-size: 300%;
+}
+
+.learn_button {
+    background-color: blue;
+}

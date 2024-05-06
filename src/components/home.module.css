@@ -6,6 +6,7 @@
     align-items: start; /* Aligns items to the start of each grid cell */
     height: 100vh; /* Optional: Makes the container full height of the viewport */
     grid-gap: 50px; /* Space between columns */
+
 }
   
 .leftColumn {
