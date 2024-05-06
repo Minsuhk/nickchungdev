@@ -4,7 +4,7 @@ import style from './contact.module.css';
 function ContactPage() {
   return (
     <div>
-      <h1 className={style.call_to_action}>C'MON, SAY HI!!</h1>
+      <h1 className={style.call_to_action}>C'MON, SAY HI! 👋</h1>
       <div className={style.call_out_text}>
         You came to this page to see how to contact me, right?
         That means you are interested in contacting me, so why not contact me? 
