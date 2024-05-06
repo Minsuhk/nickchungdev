@@ -1,12 +1,11 @@
 /* src/components/home.module.css */
 .container {
-    margin-top: 110px;
+    margin-top: 110px; /*This is what is making home funky*/
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divides the container into two equal columns */
     align-items: start; /* Aligns items to the start of each grid cell */
     height: 100vh; /* Optional: Makes the container full height of the viewport */
     grid-gap: 50px; /* Space between columns */
-
 }
   
 .leftColumn {
