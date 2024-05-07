@@ -4,7 +4,7 @@ import style from './projects.module.css';
 function ProjectsPage() {
   return (
     <div>
-      <h1 className={style.call_to_action}>Projects! 💻</h1>
+      <h1 className={style.call_to_action}>PROJECTS! 💻</h1>
       <div className={style.grid_container}>
           <div className={style.grid_item1}>
               <div className={style.project_title}>PokeCheck Website</div>
