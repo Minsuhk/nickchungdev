@@ -1,7 +1,35 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './about.module.css';
 
 function AboutPage() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const experiences = [
+    {
+      title: "Supplemental Instruction",
+      details: [
+        "Provided support for students by hosting bi-weekly study sessions, reinforcing concepts and challenging topics.",
+        "Simplified C++ topics through group activities and coding exercises, aiding student success.",
+        "Created reusable lesson plans and activities for use by current and future supplemental instructors.",
+        "Developed strong communication and teaching skills, honing time management and adaptability."
+      ]
+    },
+    {
+      title: "The Coder School Tutor",
+      details: [
+        "Instructed aspiring game developers through hands-on coding with Scratch, fostering knowledge in game dev.",
+        "Facilitated one-on-one coding sessions for K-12 students, improving understanding of programming concepts.",
+        "Constructed engaging lesson plans to captivate students' interest, ensuring an enjoyable learning experience.",
+        "Enhanced personalized instruction through collaborative efforts with fellow tutors, incorporating valuable insights from both students and peers' feedback."
+      ]
+    }
+  ];
+
+  const navigate = (direction) => {
+    const newIndex = (currentIndex + direction + experiences.length) % experiences.length;
+    setCurrentIndex(newIndex);
+  };
+
+
   return (
     <div>
       <div className={style.container}>
@@ -23,7 +51,7 @@ function AboutPage() {
 
       <hr className={style.divider}/>
 
-      <div className={style.container}>
+      <div className={style.container2}>
         <div className={style.leftColumn}>
           <h2 className={style.headline}>Skills</h2>
           <h3 className={style.statement}>
@@ -50,7 +78,7 @@ function AboutPage() {
 
       <hr className={style.divider}/>
 
-      <div className={style.container}>
+      <div className={style.container3}>
         <div className={style.leftColumn}>
           <h2 className={style.headline_long}>Experiences</h2>
           <h2 className={style.headline_short}>Exp</h2>
@@ -59,27 +87,29 @@ function AboutPage() {
           </h3>
         </div>
         <div className={style.rightColumn}>
-          <ul className={style.no_dot}>
-            <li>
-              <h1>Supplemental Instruction</h1>
-
-            </li>
-            <li>
-              <h1>The Coder School Tutor</h1>
-            </li>
-          </ul>
+          <div className={style.carousel}>
+            {experiences.map((exp, index) => (
+              <div key={index} className={`${style.carouselItem} ${index === currentIndex ? style.active : ''}`}>
+                <h1>{exp.title}</h1>
+                <ul>
+                  {exp.details.map((detail, idx) => (
+                    <li key={idx} className={style.details}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <button onClick={() => navigate(-1)} className={style.carousel_buttons}>Previous</button>
+            <button onClick={() => navigate(1)} className={style.carousel_buttons}>Next</button>
+          </div>
         </div>
       </div>
 
+      <hr className={style.divider}/>
 
-
-
-
-
-
-
-
-
+      <div className={style.container4}>
+        <h2 className={style.headline_long}>Fun Facts!</h2>
+        <h2 className={style.headline_short}>Facts!</h2>
+      </div>
 
     </div>
   );
