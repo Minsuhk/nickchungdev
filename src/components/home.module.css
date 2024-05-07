@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divides the container into two equal columns */
     align-items: start; /* Aligns items to the start of each grid cell */
-    height: 100vh; /* Optional: Makes the container full height of the viewport */
+    height: 88vh; /* Optional: Makes the container full height of the viewport */
     grid-gap: 50px; /* Space between columns */
 }
   

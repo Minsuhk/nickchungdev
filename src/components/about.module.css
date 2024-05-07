@@ -1,11 +1,13 @@
-/* src/components/home.module.css */
+.superGrid {
+
+}
 .container {
     margin-top: 120px;
     margin-bottom: -40px;
     margin-left: 50px;
     margin-right: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divides the container into two equal columns */
+    display: flex;
+    /* grid-template-coumns: 1fr 1fr; Divides the container into two equal columns */
     align-items: start; /* Aligns items to the start of each grid cell */
     height: 60vh; /* Optional: Makes the container full height of the viewport */
     grid-gap: 50px; /* Space between columns */
@@ -39,15 +41,28 @@
 
 .headline {
     font-size: 95px;
-    margin-bottom: -30px;
+    margin: 30px;
 }
 
 .headline_long {
     font-size: 95px;
-    margin-bottom: -30px;
+    margin: 30px;
 }
 
 .headline_short {
+    font-size: 95px;
+    margin: 30px;
+    display: none;
+}
+
+.headline_center_long {
+    text-align: center;
+    font-size: 95px;
+    margin-bottom: -30px;
+}
+
+.headline_center_short {
+    text-align: center;
     font-size: 95px;
     margin-bottom: -30px;
     display: none;
@@ -116,11 +131,16 @@
 .container4 {
     margin-left: 50px;
     margin-right: 50px;
-    display: grid;
     grid-template-columns: 1fr 1fr; /* Divides the container into two equal columns */
     align-items: start; /* Aligns items to the start of each grid cell */
     height: 60vh; /* Optional: Makes the container full height of the viewport */
-    grid-gap: 50px; /* Space between columns */
+
+    background-color: rgba(245, 245, 245, 0.5);
+    text-align: center;
+    border-style: outset;
+    border-radius: 10px;
+    border-color: gray;
+    margin-bottom: 300px;
 }
 
 .carouselItem {
@@ -136,22 +156,34 @@
     font-size: 15px;
 }
 
+.bryan {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Assuming .container2 corresponds to the skills container */
 @media screen and (max-width: 1100px) {
-    .container {
-        grid-template-columns: 1fr; /* Changes to one column */
-        grid-gap: 20px; /* Smaller gap since it's now vertical */
-        /* margin-bottom: 390px; */
+    .container, .container2, .container3, .container4 {
+        grid-template-columns: 1fr; /* Change to one column */
+        grid-gap: 20px; /* Adjust gap to ensure proper spacing */
+        margin-bottom: 20px; /* Remove any negative margins */
     }
+
     .leftColumn, .rightColumn {
-        grid-column: 1; /* Ensures each column fills the full width */
+        grid-column: 1; /* Full width for each item */
+        padding: 20px; /* Ensure padding is sufficient to prevent text squeezing */
+        justify-content: center;
     }
-    .skills_grid {
-        grid-template-columns: repeat(2, 1fr); /* Creates three columns */ 
+    
+    .skill {
+        margin-bottom: 10px; /* Add bottom margin to each skill for better separation */
     }
-    .exp_grid {
-        grid-template-columns: repeat(1, 1fr); /* Creates three columns */ 
+    .bryan {
+        display: flex;
+        flex-direction: column;
     }
 }
+
 
 @media screen and (max-width: 863px) {
     .container {
@@ -191,3 +223,4 @@
         padding: 20px; /* Less padding for very small screens */
     }
 }
+

@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import style from './about.module.css';
 
 function AboutPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+
   const experiences = [
     {
       title: "Supplemental Instruction",
@@ -31,8 +33,11 @@ function AboutPage() {
 
 
   return (
-    <div>
-      <div className={style.container}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column'
+    }}>
+      <div className={style.bryan}> 
         <div className={style.leftColumn}>
           <h2 className={style.headline}>About Me</h2>
           <h3 className={style.statement}>
@@ -49,9 +54,12 @@ function AboutPage() {
         </div>
       </div>
 
+
       <hr className={style.divider}/>
 
-      <div className={style.container2}>
+      <div className={style.bryan}>
+
+
         <div className={style.leftColumn}>
           <h2 className={style.headline}>Skills</h2>
           <h3 className={style.statement}>
@@ -78,7 +86,7 @@ function AboutPage() {
 
       <hr className={style.divider}/>
 
-      <div className={style.container3}>
+      <div className={style.bryan}>
         <div className={style.leftColumn}>
           <h2 className={style.headline_long}>Experiences</h2>
           <h2 className={style.headline_short}>Exp</h2>
@@ -104,11 +112,14 @@ function AboutPage() {
         </div>
       </div>
 
-      <hr className={style.divider}/>
 
+      <hr className={style.divider}/>
       <div className={style.container4}>
-        <h2 className={style.headline_long}>Fun Facts!</h2>
-        <h2 className={style.headline_short}>Facts!</h2>
+        <h2 className={style.headline_center_long}>Fun Facts!</h2>
+        <h2 className={style.headline_center_short}>Facts!</h2>
+        <h3 className={style.statement}>
+            Good vibes only 💯
+          </h3>
       </div>
 
     </div>
