@@ -27,7 +27,7 @@ function HomePage() {
       <div className={style.rightColumn}>
         <div className={style.hiddenText1}>OwO</div>
         <img 
-          src="public/assets/Images/casual_picture_2.jpg" 
+          src={"public/assets/Images/casual_picture_2.jpg"} 
           alt="Nicholas Chung" 
           className={style.personal_image}
           onMouseEnter={handleMouseEnter} 
