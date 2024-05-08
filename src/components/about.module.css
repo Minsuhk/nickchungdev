@@ -76,7 +76,7 @@
 }
 
 .hobby_image {
-    width: 30%; /* Equal width for each image */
+    width: 20%; /* Equal width for each image */
     height: auto; /* Maintain aspect ratio */
     margin: 0 1.66%; /* Space between images; adjust as needed */
     display: inline-block; /* Display images in a line */
