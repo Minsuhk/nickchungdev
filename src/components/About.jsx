@@ -37,7 +37,11 @@ function AboutPage() {
       display: 'flex',
       flexDirection: 'column'
     }}>
-      <div className={style.bryan}> 
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className={style.flex_cont}> 
         <div className={style.leftColumn}>
           <h2 className={style.headline}>About Me</h2>
           <h3 className={style.statement}>
@@ -57,7 +61,7 @@ function AboutPage() {
 
       <hr className={style.divider}/>
 
-      <div className={style.bryan}>
+      <div className={style.flex_cont}>
 
 
         <div className={style.leftColumn}>
@@ -86,7 +90,7 @@ function AboutPage() {
 
       <hr className={style.divider}/>
 
-      <div className={style.bryan}>
+      <div className={style.flex_cont}>
         <div className={style.leftColumn}>
           <h2 className={style.headline_long}>Experiences</h2>
           <h2 className={style.headline_short}>Exp</h2>
@@ -112,16 +116,22 @@ function AboutPage() {
         </div>
       </div>
 
-
       <hr className={style.divider}/>
-      <div className={style.container4}>
-        <h2 className={style.headline_center_long}>Fun Facts!</h2>
-        <h2 className={style.headline_center_short}>Facts!</h2>
-        <h3 className={style.statement}>
-            Good vibes only 💯
-          </h3>
+
+      <div className={style.flex_cont}> 
+        <div className={style.center_col}>
+          <h2 className={style.headline}>Humble Hobbies</h2>
+          <div clasName={style.hobby_container}>
+            <img src="public/gunpla.png" alt="Gunpla" className={style.hobby_image}/>
+            <img src="public/LOL.png" alt="League of Legends" className={style.hobby_image}/>
+            <img src="public/bowling.png" alt="Bowling" className={style.hobby_image}/>
+          </div>
+        </div>
       </div>
 
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
