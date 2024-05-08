@@ -34,7 +34,7 @@ function HomePage() {
           onMouseLeave={handleMouseLeave}
         />
         <div className={style.hiddenText2}>Follow my GitHub & LinkedIn💖</div>
-        <audio ref={audioRef} src="public/Misc/Among Us Sound Effect.mp3" preload="auto">
+        <audio ref={audioRef} src="public/assets/Misc/Among Us Sound Effect.mp3" preload="auto">
           Your browser does not support the audio element.
         </audio>
       </div>
