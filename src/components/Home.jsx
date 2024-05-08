@@ -27,14 +27,14 @@ function HomePage() {
       <div className={style.rightColumn}>
         <div className={style.hiddenText1}>OwO</div>
         <img 
-          src="public/casual_picture_2.jpg" 
+          src="public/images/casual_picture_2.jpg" 
           alt="Nicholas Chung" 
           className={style.personal_image}
           onMouseEnter={handleMouseEnter} 
           onMouseLeave={handleMouseLeave}
         />
         <div className={style.hiddenText2}>Follow my GitHub & LinkedIn💖</div>
-        <audio ref={audioRef} src="public/Among Us Sound Effect.mp3" preload="auto">
+        <audio ref={audioRef} src="public/misc/Among Us Sound Effect.mp3" preload="auto">
           Your browser does not support the audio element.
         </audio>
       </div>

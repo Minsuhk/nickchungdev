@@ -51,7 +51,7 @@ function AboutPage() {
         </div>
         <div className={style.rightColumn}>
           <img 
-            src="public/casual_picture_3.jpg" 
+            src="public/images/casual_picture_3.jpg" 
             alt="Nicholas Chung" 
             className={style.personal_image}
           />
@@ -122,9 +122,9 @@ function AboutPage() {
         <div className={style.center_col}>
           <h2 className={style.headline}>Humble Hobbies</h2>
           <div clasName={style.hobby_container}>
-            <img src="public/gunpla.png" alt="Gunpla" className={style.hobby_image}/>
-            <img src="public/LOL.png" alt="League of Legends" className={style.hobby_image}/>
-            <img src="public/bowling.png" alt="Bowling" className={style.hobby_image}/>
+            <img src="public/images/gunpla.png" alt="Gunpla" className={style.hobby_image}/>
+            <img src="public/images/LOL.png" alt="League of Legends" className={style.hobby_image}/>
+            <img src="public/images/bowling.png" alt="Bowling" className={style.hobby_image}/>
           </div>
         </div>
       </div>
