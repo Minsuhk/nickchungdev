@@ -55,7 +55,7 @@ function AboutPage() {
         </div>
         <div className={style.rightColumn}>
           <img 
-            src="public/assets/Images/casual_picture_3.jpg" 
+            src={pic} 
             alt="Nicholas Chung" 
             className={style.personal_image}
           />
