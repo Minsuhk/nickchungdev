@@ -1,3 +1,4 @@
+/*Custom Font*/
 .acme-regular {
     font-family: "Acme", sans-serif;
     font-weight: 400;
@@ -9,6 +10,7 @@
     box-sizing: border-box;
 }
 
+/*Main title of the page*/
 .call_to_action {
     font-size: 95px;
     text-align: center;
@@ -20,6 +22,7 @@
     border-color: gray;
 }
 
+/*Main title of the page is followed up by smaller text*/
 .call_out_text {
     font-size: 200%;
     text-align: center;
@@ -33,6 +36,7 @@
     width: 50%;
 }
 
+/*Adjust the size of the icons*/
 .socials {
     font-size: 1000%;
     text-align: center;
@@ -43,11 +47,11 @@
     border-color: gray;
     width: 50%;
     color: black;
-    text-decoration: none; /* Removes underline from the icons */
+    text-decoration: none; /*Removes underline from the icons*/
     margin-bottom: 100px;
 }
 
 .socials a {
     color: black;
-    margin: 40px; /* Space between icons */
+    margin: 40px; /*Space between icons*/
 }

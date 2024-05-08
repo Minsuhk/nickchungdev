@@ -1,3 +1,4 @@
+/*Main title of the page*/
 .call_to_action {
     font-size: 95px;
     text-align: center;
@@ -9,13 +10,14 @@
     border-color: gray;
 }
 
+/*Make grid to hold the projects*/
 .grid_container {
     display: grid;
     margin-top: -30px;
     margin-bottom: 110px;
-    grid-template-columns: repeat(3, 1fr); /* Defines three columns */
-    grid-template-rows: repeat(2, 1fr); /* Defines two rows */
-    gap: 10px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr); /*Creates three columns*/
+    grid-template-rows: repeat(2, 1fr); /*Creates two rows*/
+    gap: 10px; /*Space between grid items*/
     padding: 10px;
 }
 
@@ -25,9 +27,9 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px; 
 }
 
 .grid_item2 {
@@ -36,9 +38,9 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px;
 }
 
 .grid_item3 {
@@ -47,9 +49,9 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px; /*Font size*/
 }
 
 .grid_item4 {
@@ -58,9 +60,9 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px; /*Font size*/
 }
 
 .grid_item5 {
@@ -69,9 +71,9 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px; 
 }
 
 .grid_item6 {
@@ -80,31 +82,33 @@
     border-style: outset;
     border-radius: 10px;
     border-color: gray;
-    padding: 20px; /* Padding inside each item */
-    text-align: center; /* Center the text inside each item */
-    font-size: 16px; /* Font size */
+    padding: 20px; /*Padding inside each item*/
+    text-align: center; /*Center the text inside each item*/
+    font-size: 16px; 
 }
 
+/*Customize the title of the project*/
 .project_title {
     font-size: 300%;
     margin: 5%;
 }
 
+/*Customize the buttons that lead to github*/
 .learn_button {
     align-self: flex-end;
 }
 
-/* Media queries to adjust grid layout based on screen width */
+/*Change layout based on width*/
 @media screen and (max-width: 1100px) {
     .grid_container {
-        grid-template-columns: repeat(2, 1fr); /* Changes to two columns */
-        grid-template-rows: repeat(3, 1fr); /* Changes to three rows */
+        grid-template-columns: repeat(2, 1fr); /*Changes to two columns*/
+        grid-template-rows: repeat(3, 1fr); /*Changes to three rows*/
     }
 }
 
 @media screen and (max-width: 768px) {
     .grid_container {
-        grid-template-columns: 1fr; /* Changes to one column */
-        grid-template-rows: repeat(6, 1fr); /* Changes to six rows */
+        grid-template-columns: 1fr; /*Changes to one column*/
+        grid-template-rows: repeat(6, 1fr); /*Changes to six rows*/
     }
 }
