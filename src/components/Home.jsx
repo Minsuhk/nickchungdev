@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import style from './home.module.css';
 import pic from "/public/assets/images/casual_picture_2.jpg";
+import sus from "/public/assets/misc/Among Us Sound Effect.mp3";
 
 function HomePage() {
   const audioRef = useRef(null);  // Create a ref for the audio element
@@ -35,7 +36,7 @@ function HomePage() {
           onMouseLeave={handleMouseLeave}
         />
         <div className={style.hiddenText2}>Follow my GitHub & LinkedIn💖</div>
-        <audio ref={audioRef} src="public/assets/Misc/Among Us Sound Effect.mp3" preload="auto">
+        <audio ref={audioRef} src={sus} preload="auto">
           Your browser does not support the audio element.
         </audio>
       </div>
