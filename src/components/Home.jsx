@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import style from './home.module.css';
+import pic from "/public/assets/images/casual_picture_2.jpg";
 
 function HomePage() {
   const audioRef = useRef(null);  // Create a ref for the audio element
@@ -27,7 +28,7 @@ function HomePage() {
       <div className={style.rightColumn}>
         <div className={style.hiddenText1}>OwO</div>
         <img 
-          src={"public/assets/Images/casual_picture_2.jpg"} 
+          src={pic} 
           alt="Nicholas Chung" 
           className={style.personal_image}
           onMouseEnter={handleMouseEnter} 
