@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './contact.module.css';
+import resume from "public/assets/Misc/Nick's Resume (Updated 10.14.2023).pdf"
 
 function ContactPage() {
   return (
@@ -13,7 +14,7 @@ function ContactPage() {
       <br />
       <div className={style.socials}>
         <a href="https://github.com/Minsuhk" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="public/assets/Misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+        <a href={resume} target="_blank"><i class="fa fa-file-pdf-o"></i></a>
         <a href="https://www.linkedin.com/in/nicholasmchung/" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="mailto: nicholasmchung@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
       </div>
