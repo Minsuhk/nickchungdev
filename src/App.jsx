@@ -36,7 +36,7 @@ function App() {
                 <i className={page.icon}></i> {page.title}
               </button>
             ))}
-            <a href="public/misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
+            <a href="public/assets/misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
               <button><i className="fa fa-file-pdf-o"></i>Resume</button>
             </a>
           </div>
@@ -53,7 +53,7 @@ function App() {
                       <i className={page.icon}></i> {page.title}
                     </button>
                   ))}
-                  <a href="public/misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="public/assets/misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
                     <button><i className="fa fa-file-pdf-o"></i> Resume</button>
                   </a>
                 </ul>

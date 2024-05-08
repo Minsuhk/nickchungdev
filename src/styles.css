@@ -111,7 +111,7 @@ button:hover {
 body {
   margin: 0;
   padding: 0;
-  background-image: url("public/images/sunset.png");
+  background-image: url("public/assets/images/sunset.png");
   background-size: cover; /* Ensures the image covers the entire element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating the image */
