@@ -49,7 +49,7 @@ function App() {
                   {pages.map(page => (
                     <button key={page.name} onClick={() => {
                       setCurrentPage(page.name);
-                      setIsDropdownOpen(false); // Optionally close the dropdown when a page is selected
+                      setIsDropdownOpen(false); //Optionally close the dropdown when a page is selected
                     }}>
                       <i className={page.icon}></i> {page.title}
                     </button>

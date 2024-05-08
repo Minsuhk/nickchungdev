@@ -4,18 +4,18 @@ import pic from "/public/assets/images/casual_picture_2.jpg";
 import sus from "/public/assets/misc/Among Us Sound Effect.mp3";
 
 function HomePage() {
-  const audioRef = useRef(null);  // Create a ref for the audio element
+  const audioRef = useRef(null);  //Create a ref for the audio 
 
   const handleMouseEnter = () => {
     if (audioRef.current) {
-      audioRef.current.play();  // Play audio on mouse enter
+      audioRef.current.play();  //Play audio when mouse hover
     }
   };
 
   const handleMouseLeave = () => {
     if (audioRef.current) {
-      audioRef.current.pause();  // Pause audio on mouse leave
-      audioRef.current.currentTime = 0;  // Reset audio to start
+      audioRef.current.pause();  //Stop audio on mouse leave
+      audioRef.current.currentTime = 0;  //Reset audio to start
     }
   };
 
