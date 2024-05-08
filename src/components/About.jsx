@@ -124,7 +124,7 @@ function AboutPage() {
 
       <div className={style.flex_cont}> 
         <div className={style.center_col}>
-          <h2 className={style.headline}>Humble Hobbies</h2>
+          <h2 className={style.headline}>Hobbies</h2>
           <div clasName={style.hobby_container}>
             <img src={hob1} alt="Gunpla" className={style.hobby_image}/>
             <img src={hob2} alt="League of Legends" className={style.hobby_image}/>
