@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './contact.module.css';
-import resume from "public/assets/Misc/Nick's Resume (Updated 10.14.2023).pdf"
+import resume from "/public/assets/misc/resume.pdf";
 
 function ContactPage() {
   return (
