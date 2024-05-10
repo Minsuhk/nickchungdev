@@ -1,5 +1,11 @@
 import React from 'react';
 import style from './projects.module.css';
+import pokecheck from "/public/assets/images/pokeball.png";
+import foodreview from "/public/assets/images/csuf_tuffy.png";
+import personal from "/public/assets/images/React.png";
+import fruit from "/public/assets/images/farmer.png";
+import ai from "/public/assets/images/trex.png";
+import moyai from "/public/assets/images/moyai.png";
 
 function ProjectsPage() {
   return (
@@ -8,7 +14,7 @@ function ProjectsPage() {
       <div className={style.grid_container}>
           <div className={style.grid_item1}>
               <div className={style.project_title}>PokeCheck Website</div>
-              <img src={'/public/assets/Images/pokeball.png'} alt="PokeCheck Website" style={{ width: '30%', height: 'auto' }} />
+              <img src={pokecheck} alt="PokeCheck Website" style={{ width: '30%', height: 'auto' }} />
               <p><strong>Technologies: HTML, CSS, JS, PokeAPI, VSCode</strong></p>
               Everyone loves Pokemon, so check on the ones from your time
               <br />
@@ -16,7 +22,7 @@ function ProjectsPage() {
           </div>
           <div className={style.grid_item2}>
             <div className={style.project_title}>CSUF Food Review App</div>
-            <img src={'/public/assets/Images/csuf_tuffy.png'} alt="CSUF Food Review App" style={{ width: '30%', height: 'auto' }} />
+            <img src={foodreview} alt="CSUF Food Review App" style={{ width: '30%', height: 'auto' }} />
             <p><strong>Technologies: Swift, Firebase, XCodee</strong></p>
             Feeling hungry at CSUF? Use this app
             <br />
@@ -24,7 +30,7 @@ function ProjectsPage() {
           </div>
           <div className={style.grid_item3}>
             <div className={style.project_title}>React Personal Website</div>
-            <img src={'/public/assets/Images/React.png'} alt="React Personal Website" style={{ width: '30%', height: 'auto' }} />
+            <img src={personal} alt="React Personal Website" style={{ width: '30%', height: 'auto' }} />
             <p><strong>Technologies: HTML, CSS, React, VSCode</strong></p>
             A website all about me
             <br />
@@ -32,7 +38,7 @@ function ProjectsPage() {
           </div>
           <div className={style.grid_item4}>
             <div className={style.project_title}>Fruit Catching Game</div>
-            <img src={'/public/assets/Images/farmer.png'} alt="Super duper fun happy honey bee farm harvest simulator 5000.2" style={{ width: '20%', height: 'auto' }} />
+            <img src={fruit} alt="Super duper fun happy honey bee farm harvest simulator 5000.2" style={{ width: '20%', height: 'auto' }} />
             <p><strong>Technologies: C#, Unity</strong></p>
             Games with cute drawings and fruit are fun games
             <br />
@@ -40,7 +46,7 @@ function ProjectsPage() {
           </div>
           <div className={style.grid_item5}>
             <div className={style.project_title}>T-Rex AI Model</div>
-            <img src={'/public/assets/Images/trex.png'} alt="T-Rex AI Model" style={{ width: '30%', height: 'auto' }} />
+            <img src={ai} alt="T-Rex AI Model" style={{ width: '30%', height: 'auto' }} />
             <p><strong>Technologies: Python, HTML, CSS, VSCode</strong></p>
             If we can't get over a score of 1000 on the Google T-Rex game, then we will train an AI to do it for us
             <br />
@@ -48,7 +54,7 @@ function ProjectsPage() {
           </div>
           <div className={style.grid_item6}>
             <div className={style.project_title}>Moyai Game Info Website</div>
-            <img src={'/public/assets/Images/moyai.png'} alt="Moyai Game Info Website" style={{ width: '30%', height: 'auto' }} />
+            <img src={moyai} alt="Moyai Game Info Website" style={{ width: '30%', height: 'auto' }} />
             <p><strong>Technologies: HTML, CSS, JS, Flask, MongoDB, YouTube API, SteamAPI, VSCode</strong></p>
             The one-stop site for all your game info needs
             <br />

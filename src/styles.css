@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 
+
 /*Create simple header*/
 header {
   width: 100%;
@@ -25,14 +26,14 @@ header {
   font-size: 150%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
-  justify-content: space-between;  /* Ensures the left and right navs are pushed to the edges */
+  justify-content: space-between;  /*Keep the nav home and other buttons separated*/
   align-items: center;
 }
 
 nav {
-  width: 100%; /* Ensures nav takes full width of header */
+  width: 100%; /*Ensures nav takes full width of header*/
   display: flex;
-  justify-content: space-between; /* This will push nav-left and nav-right apart */
+  justify-content: space-between; /*This will push nav-left and nav-right apart*/
 }
 
 .nav-left, .nav-right {
@@ -40,7 +41,7 @@ nav {
 }
 
 .nav-right {
-  gap: 20px; /* Adds space between the right-side buttons */
+  gap: 20px; /*Space out the right-side buttons*/
 }
 
 button {
@@ -61,7 +62,7 @@ button:hover {
   display: none;
 }
 
-/* Dropdown Customization */
+/*Dropdown Customization*/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -69,62 +70,68 @@ button:hover {
   align-items: center;
 }
 
-/* Style the dropdown content (hidden by default) */
+
+/*Style the dropdown content (hidden by default)*/
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #d2d2d2;  /* Light grey background */
+  background-color: #d2d2d2;  /*Light grey background*/
   min-width: 160px;
-  width: 100%;  /* Full width to match the parent element */
-  box-shadow: 0 0 25px 0 black;  /* Strong shadow for better visibility */
+  width: 100%;  /*Full width to match the parent element*/
+  box-shadow: 0 0 25px 0 black;  /*Shadow makes it look a bit prettier*/
   z-index: 1;
-  padding: 12px 0;  /* Uniform padding for aesthetic consistency */
-  left: 50%;  /* Center horizontally relative to the parent */
-  transform: translateX(-50%);  /* Correct horizontal positioning */
-  top: 20%;  /* Ensure dropdown appears right below the button/trigger */
+  padding: 12px 0;  /*Make it look better*/
+  left: 50%;  /*Center horizontally relative to the parent*/
+  transform: translateX(-50%);  /*Correct horizontal positioning*/
+  top: 20%;  /*Ensure dropdown appears right below the button*/
 }
 
-/* Style the buttons inside the dropdown */
+
+/*Customize the buttons inside the dropdown*/
 .dropdown-content button {
   color: black;
-  padding: 12px 20px;  /* Uniform padding around text */
-  text-decoration: none;  /* Remove underline */
-  display: block;  /* Display block to fill the width */
-  width: 100%;  /* Full width */
-  text-align: center;  /* Center the text */
-  background-color: transparent;  /* Clear background, change on hover */
-  border: none;  /* No border */
-  cursor: pointer;  /* Pointer cursor on hover */
+  padding: 12px 20px;  /*Uniform padding around text*/
+  text-decoration: none;  /*Remove underline*/
+  display: block;  /*Display block to fill the width*/
+  width: 100%;  /*Full width*/
+  text-align: center;  /*Center the text*/
+  background-color: transparent;  /* Clear background, change on hover*/
+  border: none;  /*No border */
+  cursor: pointer;  /*Pointer cursor on hover*/
 }
 
-/* Change the background color of dropdown items on hover */
+
+/*Change the background color of dropdown items on hover*/
 .dropdown-content button:hover {
-  background-color: #eae7bf;  /* Light yellow background on hover */
+  background-color: #eae7bf;  /*Light yellow background on hover*/
 }
+
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-  display: block;  /* Display the dropdown when parent is hovered */
+  display: block;  /*Display the dropdown when parent is hovered*/
 }
+
 
 /*Adjust body as needed*/
 body {
   margin: 0;
   padding: 0;
-  background-image: url("public/assets/Images/sunset.png");
-  background-size: cover; /* Ensures the image covers the entire element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents repeating the image */
-  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+  background-image: url("/public/assets/images/sunset.png");
+  background-size: cover; /*Ensures the image covers the entire element*/
+  background-position: center; /*Centers the image*/
+  background-repeat: no-repeat; /*Prevents repeating the image*/
+  background-attachment: fixed; /*Keeps the image fixed during scrolling*/
   display: flex;
-  flex-direction: column; /* Stacks content vertically */
-  height: 100vh; /* Ensures the body does not extend beyond the viewport height */
-  overflow: visible; /* Prevents scrolling when content fits within the set height */
+  flex-direction: column; /*Stack vertically*/
+  height: 100vh; /*Make sure the scrollbar doesn't show up unless needed*/
+  overflow: visible; /*No unnecessary scrolling*/
 }
 
+/*Adjust the footer as needed*/
 footer {
   left: 0%;
-  bottom: 0%; /* Stick the footer to the bottom of the page */
+  bottom: 0%; /*Stick the footer to the bottom of the page + position fixed*/
   width: 100%;
   height: 50px;
   background-color: #333;
@@ -143,13 +150,13 @@ footer {
 .footer-text {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; /* Ensures text does not overflow */
+  text-overflow: ellipsis; /*Ensures text does not overflow*/
 }
 
 .socials a {
   color: white;
-  margin-left: 10px; /* Space between icons */
-  text-decoration: none; /* Removes underline from the icons */
+  margin-left: 10px; /*Space between icons*/
+  text-decoration: none; /*Removes underline from the icons*/
 }
 
 .socials i {

@@ -4,6 +4,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Home from './components/Home';
+import resume from "/public/assets/misc/resume.pdf";
 
 const pages = [
   { name: 'about', title: 'About', icon: 'fa fa-id-card-o'},
@@ -36,7 +37,7 @@ function App() {
                 <i className={page.icon}></i> {page.title}
               </button>
             ))}
-            <a href="public/assets/Misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               <button><i className="fa fa-file-pdf-o"></i>Resume</button>
             </a>
           </div>
@@ -48,12 +49,12 @@ function App() {
                   {pages.map(page => (
                     <button key={page.name} onClick={() => {
                       setCurrentPage(page.name);
-                      setIsDropdownOpen(false); // Optionally close the dropdown when a page is selected
+                      setIsDropdownOpen(false); //Optionally close the dropdown when a page is selected
                     }}>
                       <i className={page.icon}></i> {page.title}
                     </button>
                   ))}
-                  <a href="public/assets/Misc/Nick's Resume (Updated 10.14.2023).pdf" target="_blank" rel="noopener noreferrer">
+                  <a href={resume} target="_blank" rel="noopener noreferrer">
                     <button><i className="fa fa-file-pdf-o"></i> Resume</button>
                   </a>
                 </ul>

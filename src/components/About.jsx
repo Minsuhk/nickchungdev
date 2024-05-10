@@ -1,5 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import style from './about.module.css';
+import pic from "/public/assets/images/casual_picture_3.jpg";
+import hob1 from "/public/assets/images/gunpla.png";
+import hob2 from "/public/assets/images/LOL.png";
+import hob3 from "/public/assets/images/bowling.png";
 
 function AboutPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +55,7 @@ function AboutPage() {
         </div>
         <div className={style.rightColumn}>
           <img 
-            src="public/assets/Images/casual_picture_3.jpg" 
+            src={pic} 
             alt="Nicholas Chung" 
             className={style.personal_image}
           />
@@ -120,11 +124,11 @@ function AboutPage() {
 
       <div className={style.flex_cont}> 
         <div className={style.center_col}>
-          <h2 className={style.headline}>Humble Hobbies</h2>
+          <h2 className={style.headline}>Hobbies</h2>
           <div clasName={style.hobby_container}>
-            <img src="public/assets/Images/gunpla.png" alt="Gunpla" className={style.hobby_image}/>
-            <img src="public/assets/Images/LOL.png" alt="League of Legends" className={style.hobby_image}/>
-            <img src="public/assets/Images/bowling.png" alt="Bowling" className={style.hobby_image}/>
+            <img src={hob1} alt="Gunpla" className={style.hobby_image}/>
+            <img src={hob2} alt="League of Legends" className={style.hobby_image}/>
+            <img src={hob3} alt="Bowling" className={style.hobby_image}/>
           </div>
         </div>
       </div>

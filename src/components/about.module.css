@@ -13,7 +13,7 @@
     border-color: gray;
     margin: 30px;
     padding: 40px;
-    grid-column: 1 / 2; /* Assigns content to the first column */
+    grid-column: 1 / 2; /*Assigns content to the first column*/
 }
   
 .rightColumn {
@@ -24,7 +24,7 @@
     border-color: gray;
     margin: 30px;
     padding: 40px;
-    grid-column: 2 / 3; /* Assigns content to the second column */
+    grid-column: 2 / 3; /*Assigns content to the second column*/
 }
 
 
@@ -76,24 +76,24 @@
 }
 
 .hobby_image {
-    width: 30%; /* Equal width for each image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 1.66%; /* Space between images; adjust as needed */
-    display: inline-block; /* Display images in a line */
+    width: 20%; /*Equal width for each image*/
+    height: auto; /*Maintain aspect ratio*/
+    margin: 0 1.66%; /*Space between images; adjust as needed*/
+    display: inline-block; /*Display images in a line*/
 }
 
 .divider {
     height: 10px;
     background-color: black;
-    width: 100%;                 /* Adjust width as needed */
-    margin: 80px auto;          /* Centers the line horizontally */
+    width: 100%;                 /*Adjust width as needed*/
+    margin: 80px auto;          /*Centers the line horizontally*/
 }
 
 
 /*For "Skills" section*/
 .skills_grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three columns */ 
+    grid-template-columns: repeat(3, 1fr); /*Creates three columns*/ 
     gap: 10px;
 }
 
@@ -102,10 +102,10 @@
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 25px;
-    display: flex; /* Makes .skill a flex container */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    text-align: center; /* Also horizontally centers the text for single lines */
+    display: flex; /*Makes .skill a flex container*/
+    align-items: center; /*Vertically center the content*/
+    justify-content: center; /*Horizontally center the content*/
+    text-align: center; /*Also horizontally centers the text for single lines*/
 }
 
 
@@ -116,11 +116,11 @@
 }
 
 .carouselItem {
-    display: none; /* Hide all items by default */
+    display: none; /*Hide all items by default*/
 }
   
 .carouselItem.active {
-    display: block; /* Show active item */
+    display: block; /*Show active item*/
 }
 
 .carousel_buttons {
@@ -132,31 +132,33 @@
 /*For "Hobby" section*/
 .hobby_container {
     display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; /* Align the images vertically */
-    flex-wrap: wrap; /* Allow images to wrap onto new line */
+    justify-content: center; /*Center the images horizontally*/
+    align-items: center; /*Align the images vertically*/
+    flex-wrap: wrap; /*Allow images to wrap onto new line*/
 }
 
 .hobby {
     display: flex;
 }
 
+/*May not use if I can't figure out how to get the name of the hobby to display*/
 .hobby_name {
-    position: absolute; /* Overlaps the image */
+    position: absolute; /*Keep the image still*/
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Fills the entire image area */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.2s ease-in-out; /* Add smooth transition effect */
-    text-align: center; /* Center the text within the overlay */
-    color: white; /* Example text color */
-    background-color: rgba(0, 0, 0, 0.5); /* Example background color with some transparency */
+    height: 100%; /*Fills the entire image area*/
+    opacity: 0; /*Initially invisible*/
+    transition: opacity 0.2s ease-in-out; /*Add smooth transition effect*/
+    text-align: center; /*Center the text within the overlay*/
+    color: white; /*text color */
+    background-color: rgba(0, 0, 0, 0.5); /*Hover background color with some transparency*/
 }
 
+/*May not use if I can't figure out how to get the name of the hobby to display*/
 .hobby:hover .image-overlay {
-    opacity: 1; /* Overlay becomes visible on hover */
-  }
+    opacity: 1; /*Overlay becomes visible on hover*/
+}
 
 .center_col {
     display: flex;
@@ -176,17 +178,17 @@
 /*Adjust to different screens*/
 @media screen and (max-width: 1100px) {
     .container, .container2, .container3, .container4 {
-        grid-template-columns: 1fr; /* Change to one column */
-        grid-gap: 20px; /* Adjust gap to ensure proper spacing */
-        margin-bottom: 20px; /* Remove any negative margins */
+        grid-template-columns: 1fr; /*Change to one column*/
+        grid-gap: 20px; /*Adjust gap to ensure proper spacing*/
+        margin-bottom: 20px; /*Remove any negative margins*/
     }
     .leftColumn, .rightColumn {
-        grid-column: 1; /* Full width for each item */
-        padding: 20px; /* Ensure padding is sufficient to prevent text squeezing */
+        grid-column: 1; /*Full width for each item*/
+        padding: 20px; /*Ensure padding is sufficient to prevent text squeezing*/
         justify-content: center;
     }
     .skill {
-        margin-bottom: 10px; /* Add bottom margin to each skill for better separation */
+        margin-bottom: 10px; /*Add bottom margin to each skill for better separation*/
     }
     .flex_cont {
         display: flex;
@@ -196,15 +198,15 @@
 
 @media screen and (max-width: 863px) {
     .container {
-        padding: 10px; /* Optional: Adjust padding for smaller devices */
+        padding: 10px; /*Adjust padding for smaller devices*/
 
     }
     .leftColumn, .rightColumn {
-        padding: 20px; /* Less padding for very small screens */
+        padding: 20px; /*Less padding for very small screens*/
     }
     .skills_grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Creates three columns */ 
+        grid-template-columns: repeat(1, 1fr); /*Creates three columns*/ 
     }
     .headline_long {
         display: none;
@@ -216,19 +218,19 @@
 
 @media screen and (max-width: 839px) {
     .container {
-        padding: 10px; /* Optional: Adjust padding for smaller devices */
+        padding: 10px; /*Adjust padding for smaller devices*/
     }
     .leftColumn, .rightColumn {
-        padding: 20px; /* Less padding for very small screens */
+        padding: 20px; /*Less padding for very small screens*/
     }
 }
 
 @media screen and (max-width: 504px) {
     .container {
-        padding: 10px; /* Optional: Adjust padding for smaller devices */
-        /* margin-bottom: 715px; */
+        padding: 10px; /*Adjust padding for smaller devices*/
+        /*margin-bottom: 715px;*/
     }
     .leftColumn, .rightColumn {
-        padding: 20px; /* Less padding for very small screens */
+        padding: 20px; /*Less padding for very small screens*/
     }
 }
