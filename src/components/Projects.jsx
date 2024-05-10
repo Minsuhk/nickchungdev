@@ -36,7 +36,7 @@ function ProjectsPage() {
             <p><strong>Technologies: C#, Unity</strong></p>
             Games with cute drawings and fruit are fun games
             <br />
-            <a href="#https://github.com/Minsuhk/PokedexWebsite" className = {style.learn_button} target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Learn More!</a>
+            <a href="https://github.com/Minsuhk/Happy-Farm-Game" className = {style.learn_button} target="_blank"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Learn More!</a>
           </div>
           <div className={style.grid_item5}>
             <div className={style.project_title}>T-Rex AI Model</div>
