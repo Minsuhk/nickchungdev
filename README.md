@@ -1,9 +1,11 @@
 ■ ■ ■ How to run "nickchungdev" personal portfolio website ■ ■ ■
 
 • Method 1 (online version)
+
     1) Open the link provided in the assignment file, or open the following link: https://nickchungdev.vercel.app/
 
 • Method 2 (local version)
+
     1) Download the ZIP file from the provided GitHub link in the assignment file
     2) Extract the folder and move it to wherever necessary
     3) Open the folder with an IDE, like Visual Studio Code
@@ -16,6 +18,7 @@
 ■ ■ ■ Features ■ ■ ■
 
 • Home page 
+
     1) Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     2) Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     3) Brief greeting text 
@@ -23,6 +26,7 @@
     5) Easter egg
 
 • About Page
+
     1) Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     2) Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     3) Brief introduction of myself
@@ -32,6 +36,7 @@
     7) Images of hobbies I enjoy (left to right: robots, gaming, bowling)
 
 • Projects Page
+
     1) Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     2)Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     3) Display of projects that I have worked on
@@ -41,6 +46,7 @@
     7) Each project has a link that takes the user to the github page associated with the project
 
 • Contact Page
+
     1) Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     2) Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     3) Call-to-action text that motivates the user to contact me
