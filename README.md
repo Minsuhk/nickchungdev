@@ -53,4 +53,4 @@
     1) Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     2) Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     3) Call-to-action text that motivates the user to contact me
-    4) Four buttons that the user can use to contact me: "GitHub", "Resume", "LinkedIn", and "Email" button
+    4) Four buttons the user can use to contact me: "GitHub", "Resume", "LinkedIn", and "Email" button
