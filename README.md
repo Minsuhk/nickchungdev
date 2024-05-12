@@ -15,14 +15,14 @@
 
 ■ ■ ■ Features ■ ■ ■
 
-•Home page 
+• Home page 
     -Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     -Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     -Brief greeting text 
     -Image of me
     -Easter egg
 
-•About Page
+• About Page
     -Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     -Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     -Brief introduction of myself
@@ -31,7 +31,7 @@
     -Carousel of experiences
     -Images of hobbies I enjoy (left to right: robots, gaming, bowling)
 
-•Projects Page
+• Projects Page
     -Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     -Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     -Display of projects that I have worked on
@@ -40,7 +40,7 @@
     -Each project has an image that is related to the project
     -Each project has a link that takes the user to the github page associated with the project
 
-•Contact Page
+• Contact Page
     -Nav bar with "Home", "About", "Projects", "Contact", "Resume" buttons
     -Footer with credits on it and "GitHub", "Resume", "LinkedIn", and "Email" buttons
     -Call-to-action text that motivates the user to contact me
