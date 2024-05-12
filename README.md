@@ -2,16 +2,19 @@
 
 • Method 1 (online version)
 
-    1) Open the link provided in the assignment file, or open the following link: https://nickchungdev.vercel.app/
+    1) Open the link provided in the assignment file
+    2) Open the following link: https://nickchungdev.vercel.app/
 
 • Method 2 (local version)
 
     1) Download the ZIP file from the provided GitHub link in the assignment file
     2) Extract the folder and move it to wherever necessary
     3) Open the folder with an IDE, like Visual Studio Code
-    4) In the terminal of an IDE, run `npm install` to ensure that the supporting files are all installed to ensure a successful run
+    4) In the terminal of an IDE, run `npm install` to ensure that the supporting files are 
+       all installed to ensure a successful run
     5) In the terminal of an IDE, run `npm run dev` to run the program
-    6) In the terminal, a local link should have been created for you to click on. CTRL+Click on it to open the program on a browser
+    6) In the terminal, a local link should have been created for you to click on. 
+       CTRL+Click on it to open the program on a browser
     7) Now that the website is open, you can click on any buttons to explore the website
     8) Easter Egg: Try hovering your cursor over my home screen picture to see what happens 
 
